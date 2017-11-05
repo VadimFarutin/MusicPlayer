@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.codetail.widget.RevealFrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="?attr/actionBarSize"
+	android:layout_gravity="bottom">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar_footer"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:background="@color/colorAccent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:id="@+id/footer"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/footer_title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					tools:text="footer_title"/>
+
+				<TextView
+					android:id="@+id/footer_artist"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					tools:text="footer_artist"/>
+			</LinearLayout>
+
+			<ImageButton
+				android:id="@+id/footer_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				tools:src="@drawable/ic_play_arrow_48dp"/>
+		</LinearLayout>
+	</android.support.v7.widget.Toolbar>
+
+</io.codetail.widget.RevealFrameLayout>
